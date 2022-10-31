@@ -63,8 +63,8 @@ public class NumberUtilities {
     public static String getExponentiations(int start, int stop, int step, int exponent) {
         String stream = "";
         for (int i = start; i < stop; i += step){
-            i = (int)Math.pow(i, exponent);
-            stream += i;
+            int j = (int)Math.pow(i, exponent);
+            stream += j;
         }
         return stream;
     }
